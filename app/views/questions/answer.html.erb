@@ -1,0 +1,10 @@
+<h2><%=@question%></h2>
+<% if @question == "I am going to work"%>
+  <%="Great!"%>
+<% elsif @question[-1] == "?"%>
+  <%="Silly question, get dressed and go to work!"%>
+<%else%>
+  <%="I don't care, get dressed and go to work!"%>
+<%end%>
+
+<%= link_to "What's the meaning of life?", "ask" %>
